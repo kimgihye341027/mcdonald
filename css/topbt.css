@@ -1,0 +1,32 @@
+@charset "utf-8";
+.top-btn-wrap {
+    position: fixed;
+    right: 10%;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    /* background-color: aqua; */
+    transition: right 0.5s ease, bottom 0.5s ease;
+}
+
+/* 버튼 공통 스타일 */
+.top-btn-wrap a {
+    display: block;
+    /* width: 100px;
+    height: 100px;
+    line-height: 100px; */
+    overflow: hidden;
+}
+
+/* 이미지 공통 스타일 */
+.top-btn-wrap a img {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover; /* 이미지가 버튼 영역에 맞게 채워지도록 */
+}
+.mcapp-btn{
+    margin-bottom: 20px;
+}

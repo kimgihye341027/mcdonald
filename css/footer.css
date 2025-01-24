@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* =========footer======== */
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 5%;
+  background-color: #292929;
+}
+.footer-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1055px;
+  z-index: 1;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 7%;
+  /* background-color: #fc837a; */
+}
+/* footer 좌측 */
+.footer-right {
+  position: relative;
+  display: flex;
+  gap: 50px;
+  line-height: 2;
+  color: #c7c7c7; 
+}
+.footer-sitemap >li > a{
+  color: #c7c7c7;
+}
+.footer-sitemap > li> .personaldata{
+  color: #FFC72C;
+}
+
+/* footer 우측 */
+.footer-left {
+  position: relative;
+}
+.footer-icon {
+  display: flex;
+  padding-top: 42%;
+
+}
+.footer-icon > li >a{
+  padding-left: 10px;
+}

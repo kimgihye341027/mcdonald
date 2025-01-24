@@ -36,7 +36,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- css 연결 -->
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- js연결 -->
     <!-- jquery연결 -->
     <script src="js/jquery-1.12.3.js"></script>
@@ -46,7 +47,15 @@
     <title>맥도날드 리디자인</title>
   </head>
   <body>
-    <!-- top-bt -->
+    <!-- top-버튼 -->
+    <div class="top-btn-wrap">
+      <a href="#" class="mcapp-btn">
+        <img src="images/top-bt/mcapp.png" alt="맥앱">
+      </a>
+      <a href="#" class="medelivery-btn">
+        <img src="images/top-bt/mcdelivery.png" alt="맥딜리버리"/>
+      </a>
+    </div>
     <!-- 전체레이아웃 -->
     <div class="container">
       <!-- header -->
@@ -111,28 +120,29 @@
         </div>
         <div class="header_bg"></div>
       </header>
-      <!-- main -->
-      <main class="main">
+      <!-- contents -->
+      <div class="contents">
         <!-- main-text -->
-        <div class="main-inner">
-          <div class="main-text">
+        <div class="contents-inner">
+          <div class="contents-text">
             <h1>Fresh Burger</h1>
             <p>
               우리가 엄격해질수록 버거는 더 맛있어지니까!<br />
-              모두의 노력으로 엄격하고 꼼꼼하게 키워진 신선한 식재료가 모여,<br />
+              모두의 노력으로 엄격하고<br />
+              꼼꼼하게 키워진 신선한 식재료가 모여,<br />
               마침내 맛있는 맥도날드 버거가 됩니다.
             </p>
             <!-- 버튼 -->
             <a href="#">
-              <button class="main-bt">맥도날드 품질 이야기</button>
+              <button class="contents-bt">맥도날드 품질 이야기</button>
             </a>
           </div>
-          <!-- main-img -->
-          <div class="main-img">
+          <!-- contents-img -->
+          <div class="contents-img">
             <img src="images/main/main_freshburger.png" alt="메인햄버거 이미지" />
           </div>
         </div>
-      </main>
+      </div>
       <!-- banner -->
       <div class="banner">
         <div class="banner-inner">
@@ -169,7 +179,7 @@
       <div class="promotion">
         <div class="promotion-inner">
           <!-- 상단 텍스트 -->
-           <div class="pro-textgroup">
+          <div class="pro-textgroup">
             <div class="pro-text1">
               <h1>Promotion</h1>
               <a href="#" class="showMore" id="showMore">
@@ -179,64 +189,190 @@
             <div class="pro-text2">
               <p>진행중인 프로모션 확인하고, 다양한 혜택 받아가세요.</p>
             </div>
-           </div>
-          <!-- Swiper -->
+          </div>
+          <!-- 하단 Swiper -->
           <div class="swiper proSwiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/1.jpg" alt="행운버거">
-                  <p>세상 가장 맛있는 기부,</p>
-                  <p>행운버거와 함께 하세요!</p>
+                  <img src="images/promotion/1.jpg" alt="행운버거" />
+                  <div class="prosw-txt">
+                    <p>세상 가장 맛있는 기부,</p>
+                    <p>행운버거와 함께 하세요!</p>
+                  </div>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/2.jpg" alt="오렌지주스">
-                  <p>달콤 상콤한 골드 맥피즈</p>
-                  <p>행운버거와 함께 하세요!</p>
+                  <img src="images/promotion/2.jpg" alt="오렌지주스" />
+                  <div class="prosw-txt">
+                    <p>달콤 상콤한 골드 맥피즈</p>
+                    <p>행운버거와 함께 하세요!</p>
+                  </div>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/3.jpg" alt="1000원간식">
-                  <p>맥도날드 대표 간식을 1000원부터!</p>
-                  <p>행운버거와 함께 하세요!</p>
+                  <img src="images/promotion/3.jpg" alt="1000원간식" />
+                  <div class="prosw-txt">
+                    <p>맥도날드 대표 간식을 1000원부터!</p>
+                    <p>행운버거와 함께 하세요!</p>
+                  </div>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/4.jpg" alt="맥모닝">
-                  <p>단짠촉촉 맥그리들 출시!</p>
-                  <p></p>
+                  <img src="images/promotion/4.jpg" alt="맥모닝" />
+                  <div class="prosw-txt">
+                    <p>단짠촉촉 맥그리들 출시!</p>
+                    <p></p>
+                  </div>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/5.jpg" alt="크리스피">
-                  <p>빠삭하게 빠져드는 맛,</p>
-                  <p>맥크리스피!</p>
+                  <img src="images/promotion/5.jpg" alt="크리스피" />
+                  <div class="prosw-txt">
+                    <p>빠삭하게 빠져드는 맛,</p>
+                    <p>맥크리스피!</p>
+                  </div>
                 </a>
               </li>
               <li class="swiper-slide">
                 <a href="#">
-                  <img src="images/promotion/6.jpg" alt="츄러스">
-                  <p>달콤함이 한입에 쏙</p>
-                  <p>NEW 한입 초코 츄러스</p>
+                  <img src="images/promotion/6.jpg" alt="츄러스" />
+                  <div class="prosw-txt">
+                    <p>달콤함이 한입에 쏙</p>
+                    <p>NEW 한입 초코 츄러스</p>
+                  </div>
                 </a>
               </li>
             </ul>
-            <div class="swiper-pagination"></div>
+            <!-- <div class="swiper-pagination"></div> -->
           </div>
         </div>
       </div>
       <!-- menu -->
       <div class="menu">
-        <div class="menu-inner"></div>
+        <div class="menu-inner">
+          <!-- 상단 텍스트 -->
+          <div class="menu-textgroup">
+            <div class="menu-text1">
+              <h1>Menu</h1>
+              <a href="#" class="showMore" id="showMore">
+                <p>더보기</p>
+              </a>
+            </div>
+            <div class="menu-text2">
+              <p>주문 즉시 바로 조리해 더욱 맛있는, 맥도날드의 다양한 버거를 소개합니다.</p>
+            </div>
+          </div>
+          <!-- 하단 Swiper -->
+          <div class="swiper menuSwiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu/prosperity_gold.png" alt="행운버거" />
+                  <div class="prosw-txt">
+                    <p>행운버거 골드</p>
+                    <p>Prosperity Gold</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu/prosperity_goldspecial.png" alt="행운버거 골드 스페셜" />
+                  <div class="prosw-txt">
+                    <p>행운버거 골드 스페셜</p>
+                    <p>Prosperity Burger Gold Special</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu/double_quarterpounder_cheese.png" alt="더블 쿼터파운더 치즈" />
+                  <div class="prosw-txt">
+                    <p>더블 쿼터파운더® 치즈</p>
+                    <p>double quarter pounder cheese</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu/quarterpounder_cheese.png" alt="쿼터파운더® 치즈" />
+                  <div class="prosw-txt">
+                    <p>쿼터파운더® 치즈</p>
+                    <p>Quarter Pounder® with Cheese</p>
+                  </div>
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/menu/mcspicy_shanghai.png" alt="맥스파이시® 상하이 버거" />
+                  <div class="prosw-txt">
+                    <p>맥스파이시® 상하이 버거</p>
+                    <p>McSpicy® Shanghai Burger</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
       </div>
       <!-- footer -->
       <div class="footer">
-        <div class="footer-inner"></div>
+        <div class="footer-inner">
+          <!-- footer 좌측 -->
+          <div class="footer-right">
+            <!--사이트맵 -->
+            <ul class="footer-sitemap">
+              <li>
+                <a href="#" class="personaldata">개인정보 처리방침</a>
+              </li>
+              <li>
+                <a href="#">사이트맵</a>
+              </li>
+              <li>
+                <a href="#">임차문의</a>
+              </li>
+              <li>
+                <a href="#">고객문의</a>
+              </li>
+              <li>
+                <a href="#">인재채용</a>
+              </li>
+            </ul>
+            <!--회사정보 -->
+            <ul class="footer-info">
+              <li>한국맥도날드(유)</li>
+              <li>대표이사:김기현</li>
+              <li>사업자등록번호: 101-81-26400</li>
+              <li>전화주문: 1600-5252</li>
+              <li>COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald’s.</li>
+            </ul>
+          </div>
+          <!-- footer 우측 -->
+           <div class="footer-left">
+            <ul class="footer-icon">
+              <li>
+                <a href="#">
+                  <img src="images/footer/facebook-icon.png" alt="페이스북">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/footer/insagram-icon.png" alt="인스타그램">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/footer/youtube-icon.png" alt="유튜브">
+                </a>
+              </li>
+            </ul>
+           </div>
+        </div>
       </div>
     </div>
   </body>

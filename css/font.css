@@ -1,0 +1,12 @@
+@charset "utf-8";
+h1 {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 50px;
+  }
+  p {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  }
