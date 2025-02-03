@@ -27,7 +27,7 @@
   width: 100%;
   height: 330px;
   box-shadow: 5px 15px 30px rgba(50, 50, 50, 0.05);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 .line {
   width: 100%;
@@ -65,13 +65,13 @@
   width: 100%;
   height: 70px;
 }
-.gnb > li {
+.nav > .gnb > li {
   width: calc(100% / 4);
 }
-.gnb > li:hover > a {
+.nav > .gnb > li:hover > a {
   color: #da291c;
 }
-.gnb > li > a {
+.nav > .gnb > li > a {
   font-size: 20px;
   font-weight: 600;
   line-height: 70px;
@@ -79,20 +79,21 @@
 
 /* depth2 */
 
-.depth2 {
+.nav > .gnb > li > .depth2 {
   position: relative;
   width: 100%;
   display: none;
   z-index: 99999;
-  padding: 0, 10px;
 }
-.depth2 > li:hover > a {
+.nav > .gnb > li > .depth2 > li:hover > a {
   color: #da291c;
 }
-.depth2 > li > a {
+
+.nav > .gnb > li > .depth2 > li > a {
   font-size: 16px;
   font-weight: 600;
   line-height: 40px;
+  text-align: left;
   color: #9c9c9c;
 }
 
@@ -128,6 +129,7 @@
 /* =========모바일용 메뉴 =========*/
 /* 아이콘 모바일 메뉴 */
 .mb-xi {
+  cursor: pointer;
 }
 .mobile-nav {
   position: fixed;
@@ -137,26 +139,28 @@
   height: 100vh;
   background-color: #333;
   color: #fff;
-  padding-top: 60px;
+  padding-top: 100px;
   z-index: 99999;
-  /* display: none; */
 }
 .mobile-nav .gnb {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .mobile-nav .gnb > li {
+  width: 100%;
   border-bottom: 1px solid #333;
 }
 .mobile-nav .gnb > li > a {
   display: block;
-  padding: 15px;
+  width: 100%;
+  padding: 10px 15px;
   background-color: #444;
   color: #fff;
   font-size: 18px;
 }
 .mobile-nav .depth2 {
-  /* display: none; */
+  display: none;
 }
 .mobile-nav .depth2 > li > a {
   display: block;

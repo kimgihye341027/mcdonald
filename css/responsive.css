@@ -50,6 +50,7 @@
   .contents-inner {
     padding-top: 10%;
   }
+
 }
 @media screen and (max-width: 623px) {
   .footer-inner {
@@ -60,6 +61,21 @@
   }
 }
 @media screen and (max-width: 576px) {
+    /* contents */
+    .contents {
+      height: 550px;
+    }
+    .contents-inner {
+      /* padding-top: 120px; */
+      display: flex;
+
+      background-color: aqua;
+    }
+    .contents-img {
+      position: relative;
+      top: -83px;
+    }
+  /* banner */
   .banner .swiper-slide {
     width: 100%;
     background-color: aqua;
@@ -82,16 +98,7 @@
   .banner .swiper-button-next::after {
     display: none;
   }
-  .contents {
-    height: 550px;
-  }
-  .contents-inner {
-    padding-top: 120px;
-  }
-  .contents-img {
-    position: relative;
-    top: -83px;
-  }
+
 }
 @media screen and (max-width: 450px) {
   .contents {
