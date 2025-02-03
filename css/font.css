@@ -2,11 +2,35 @@
 h1 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 50px;
+    font-size: 45px;
   }
   p {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+  }
+  @media screen and (max-width: 576px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
   }

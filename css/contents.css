@@ -43,8 +43,8 @@
 /* =====오른쪽-img====== */
 .contents-img {
   position: relative;
-  width: 70%;
-  margin-left: 30%;
+  width: 60%;
+  margin-left: 40%;
 }
 .contents-img > img {
   width: 100%;

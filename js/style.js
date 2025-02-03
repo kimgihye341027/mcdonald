@@ -69,9 +69,10 @@ $(document).ready(function () {
 });
 window.onload = function () {
   const footer = document.querySelector(".footer");
-  const topButton = document.querySelector('.top-btn-wrap');
+  const topButton = document.querySelector(".top-btn-wrap");
   // 스크롤 이벤트
-  window.addEventListener("scroll", () => {
+  window.addEventListener("scroll", (e) => {
+    e.preventDefault();
     // 스크롤 위치가 300px 이상이면 버튼 표시
     if (window.scrollY > 200) {
       topButton.style.display = "block";
