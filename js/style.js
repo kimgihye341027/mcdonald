@@ -90,6 +90,7 @@ $(document).ready(function () {
     },
   });
 });
+//탑버튼
 window.onload = function () {
   const footer = document.querySelector(".footer");
   const topButton = document.querySelector(".top-btn-wrap");

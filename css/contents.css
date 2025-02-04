@@ -44,6 +44,7 @@
 .contents-img {
   position: relative;
   width: 60%;
+  min-width: 300px;
   margin-left: 40%;
 }
 .contents-img > img {

@@ -137,7 +137,7 @@
   right: -300px;
   width: 250px;
   height: 100vh;
-  background-color: #333;
+  background-color: #F9F9F9;
   color: #fff;
   padding-top: 100px;
   z-index: 99999;
@@ -149,30 +149,39 @@
 }
 .mobile-nav .gnb > li {
   width: 100%;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffffff;
 }
 .mobile-nav .gnb > li > a {
   display: block;
   width: 100%;
-  padding: 10px 15px;
-  background-color: #444;
-  color: #fff;
-  font-size: 18px;
+  padding: 15px 15px;
+  background-color: #ffc72c;
+  color: #F9F9F9;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .mobile-nav .depth2 {
   display: none;
 }
 .mobile-nav .depth2 > li > a {
   display: block;
-  padding: 10px;
-  background-color: #666;
-  color: #fff;
+  padding: 15px 15px;
+  background-color: #F9F9F9;
+  color: #321710;
+  border-bottom: 1px solid #ffc72c;
   font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
+.mobile-nav .depth2 > li:last-of-type > a {
+  border-bottom: none;
+}
+
 /* X 버튼 */
 .close-menu {
   position: absolute;
-  top: 20px;
+  top: 45px;
   right: 20px;
   cursor: pointer;
 }
